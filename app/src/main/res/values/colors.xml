@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="dark_100">#FF0D0E0F</color>
+    <color name="dark_75">#FF161719</color>
+    <color name="dark_50">#FF212325</color>
+    <color name="dark_25">#FF292B2D</color>
+
+    <color name="light_100">#FFFFFFFF</color>
+    <color name="light_80">#FFFCFCFC</color>
+    <color name="light_60">#FFF1F1FA</color>
+    <color name="light_40">#FFE3E5E5</color>
+    <color name="light_20">#FF91919F</color>
+
+    <color name="green_100">#FF00A86B</color>
+    <color name="green_80">#FF2AB784</color>
+    <color name="green_60">#FF65D1AA</color>
+    <color name="green_40">#FF93EACA</color>
+    <color name="green_20">#FFCFFAEA</color>
+
+    <color name="red_100">#FFFD3C4A</color>
+    <color name="red_80">#FFFD5662</color>
+    <color name="red_60">#FFFD6F7A</color>
+    <color name="red_40">#FFFDA2A9</color>
+    <color name="red_20">#FFFDD5D7</color>
+
+    <color name="violet_100">#FF7F3DFF</color>
+    <color name="violet_80">#FF8F57FF</color>
+    <color name="violet_60">#FFB18AFF</color>
+    <color name="violet_40">#FFD3BDFF</color>
+    <color name="violet_20">#FFEEE5FF</color>
+
+    <color name="yellow_100">#FFFCAC12</color>
+    <color name="yellow_80">#FFFCBB3C</color>
+    <color name="yellow_60">#FFFCCC6F</color>
+    <color name="yellow_40">#FFFCDDA1</color>
+    <color name="yellow_20">#FFFCEED4</color>
+
+    <color name="blue_100">#FF0077FF</color>
+    <color name="blue_80">#FF248AFF</color>
+    <color name="blue_60">#FF57A5FF</color>
+    <color name="blue_40">#FF8AC0FF</color>
+    <color name="blue_20">#FFBDDCFF</color>
+
+
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
