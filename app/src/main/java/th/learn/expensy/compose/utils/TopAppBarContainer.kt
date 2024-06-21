@@ -47,8 +47,8 @@ fun TopAppBarContainer(
             .background(
                 brush = Brush.verticalGradient(
                     colors = listOf(
-                        colorResource(id = R.color.yellow_40),
-                        colorResource(id = R.color.yellow_20)
+                        colorResource(id = R.color.yellow_20),
+                        colorResource(id = R.color.light_80)
                     )
                 )
             )
@@ -122,60 +122,51 @@ fun ValueBox(
     Box (
         modifier = Modifier
             .width(166.dp)
-            .height(99.dp)
             .clip(RoundedCornerShape(23.dp))
             .background(color)
     ) {
-        Column (
-            modifier = Modifier
-                .fillMaxSize()
-                .padding(25.dp,),
+        Row (
+            modifier = Modifier.fillMaxSize(),
+            horizontalArrangement = Arrangement.Center,
+            verticalAlignment = Alignment.CenterVertically
         ) {
-                Row (
-                    modifier = Modifier.fillMaxSize(),
-                    horizontalArrangement = Arrangement.Center,
-                    verticalAlignment = Alignment.CenterVertically
-                ) {
-                    Box(
-                        modifier = Modifier
-                            .width(50.dp)
-                            .height(50.dp)
-                            .clip(RoundedCornerShape(10.dp))
-                            .background(colorResource(id = R.color.light_100))
-                    ){
-                        Icon(
-                            painter = iconResource,
-                            contentDescription = "Localized description",
-                            modifier = Modifier
-                                .size(60.dp)
-                                .padding(3.dp)
-                                .align(Alignment.Center),
-                            tint = color
-                        )
-                    }
+            Box(
+                modifier = Modifier
+                    .width(50.dp)
+                    .height(50.dp)
+                    .clip(RoundedCornerShape(10.dp))
+                    .background(colorResource(id = R.color.light_100))
+            ){
+                Icon(
+                    painter = iconResource,
+                    contentDescription = "Localized description",
+                    modifier = Modifier
+                        .size(60.dp)
+                        .padding(3.dp)
+                        .align(Alignment.Center),
+                    tint = color
+                )
+            }
 
-                    Spacer(modifier = Modifier.width(5.dp))
-                    Column {
-                        Text(
-                            text = title,
-                            style = TextStyle(
-                                color = colorResource(id = R.color.light_100)
-                            )
+            Spacer(modifier = Modifier.width(5.dp))
+            Column {
+                Text(
+                    text = title,
+                    style = TextStyle(
+                        color = colorResource(id = R.color.light_100)
+                    )
 
-                        )
-                        Spacer(modifier = Modifier.width(10.dp))
-                        Text(
-                            text = value,
-                            style = TextStyle(
-                                color = colorResource(id = R.color.light_100),
-                                fontWeight = FontWeight.Bold,
-                                fontSize = 20.sp
-                            )
-                        )
-                    }
-        }
-
-
+                )
+                Spacer(modifier = Modifier.width(10.dp))
+                Text(
+                    text = value,
+                    style = TextStyle(
+                        color = colorResource(id = R.color.light_100),
+                        fontWeight = FontWeight.Bold,
+                        fontSize = 16.sp
+                    )
+                )
+            }
         }
     }
 }
