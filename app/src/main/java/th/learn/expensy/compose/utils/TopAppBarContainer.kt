@@ -1,8 +1,6 @@
 package th.learn.expensy.compose.utils
 
-import android.graphics.drawable.Icon
 import androidx.compose.foundation.background
-import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -14,9 +12,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
-import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material3.AssistChipDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -88,8 +84,7 @@ fun TopAppBarContainer(
                 )
             )
             Spacer(modifier = Modifier.height(30.dp))
-            Row (
-            ) {
+            Row {
                 ValueBox(
                     iconResource = painterResource(id = R.drawable.income),
                     title = "Income",
@@ -97,7 +92,7 @@ fun TopAppBarContainer(
                     color = colorResource(id = R.color.green_100)
                 )
 
-                Spacer(modifier = Modifier.width(10.dp))
+                Spacer(modifier = Modifier.width(20.dp))
 
                 ValueBox(
                     iconResource = painterResource(id = R.drawable.income),
@@ -148,7 +143,7 @@ fun ValueBox(
                 )
             }
 
-            Spacer(modifier = Modifier.width(5.dp))
+            Spacer(modifier = Modifier.width(10.dp))
             Column {
                 Text(
                     text = title,
