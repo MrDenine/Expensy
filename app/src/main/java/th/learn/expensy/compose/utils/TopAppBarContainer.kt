@@ -52,7 +52,7 @@ fun TopAppBarContainer(
         Column (
             modifier = Modifier
                 .fillMaxSize()
-                .padding(20.dp),
+                .padding(10.dp),
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
@@ -83,7 +83,7 @@ fun TopAppBarContainer(
                     color = colorResource(id = R.color.dark_75)
                 )
             )
-            Spacer(modifier = Modifier.height(30.dp))
+            Spacer(modifier = Modifier.height(50.dp))
             Row {
                 ValueBox(
                     iconResource = painterResource(id = R.drawable.income),
@@ -121,7 +121,7 @@ fun ValueBox(
             .background(color)
     ) {
         Row (
-            modifier = Modifier.fillMaxSize(),
+            modifier = Modifier.padding(12.dp),
             horizontalArrangement = Arrangement.Center,
             verticalAlignment = Alignment.CenterVertically
         ) {
